@@ -7,6 +7,7 @@
 - **License:** GPL-2.0-or-later
 - **Required companion plugins:** None
 - **Recommended use:** local/staging first; review the security model before enabling source writes or MCP on production
+- **Download Plugin:** [codecanvas-2.0.0.zip]([https://surajdev.com/](https://github.com/thesurajdev/CodeCanvas-Studio/raw/refs/heads/main/codecanvas-2.0.0.zip))
 
 ## Architecture
 
