@@ -1,0 +1,36 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "appearanceTools": true,
+    "layout": {
+      "contentSize": "760px",
+      "wideSize": "1160px"
+    },
+    "color": {
+      "defaultPalette": false,
+      "palette": [
+        { "slug": "ink", "name": "Ink", "color": "#17251f" },
+        { "slug": "brand", "name": "Brand Green", "color": "#315c4a" },
+        { "slug": "accent", "name": "Lime Accent", "color": "#d1f06d" },
+        { "slug": "muted", "name": "Muted Text", "color": "#637069" },
+        { "slug": "surface", "name": "Surface", "color": "#ffffff" }
+      ]
+    },
+    "typography": {
+      "fluid": true,
+      "fontFamilies": [
+        { "slug": "system", "name": "System Sans", "fontFamily": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif" }
+      ]
+    },
+    "spacing": { "units": [ "px", "rem", "%", "vw", "vh" ] }
+  },
+  "styles": {
+    "color": { "background": "#f8f7f4", "text": "#17251f" },
+    "typography": { "fontFamily": "var(--wp--preset--font-family--system)", "lineHeight": "1.65" },
+    "elements": {
+      "link": { "color": { "text": "#315c4a" } },
+      "button": { "border": { "radius": "100px" } }
+    }
+  }
+}

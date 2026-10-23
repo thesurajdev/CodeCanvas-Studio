@@ -1,0 +1,60 @@
+/* CodeCanvas MCP & Settings screen. Loaded only on admin.php?page=codecanvas-settings. */
+.cc-mcp-wrap .cc-mcp-status-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:18px 0 22px}
+.cc-mcp-wrap .cc-admin-stat strong.is-on{color:#315c4a}
+.cc-mcp-wrap .cc-admin-stat strong.is-off{color:#8a5a2b}
+.cc-mcp-wrap .cc-admin-stat strong.is-small{font-size:16px;letter-spacing:-.02em;line-height:1.5}
+.cc-mcp-endpoint{display:block;padding:12px 14px;border:1px solid #dce4d9;border-radius:9px;background:#f6f9f4;color:#233a2c;font-size:12px;overflow-wrap:anywhere}
+.cc-mcp-copy-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:12px 0 6px}
+.cc-mcp-copy-row input{flex:1 1 340px;max-width:100%;font-size:13px}
+.cc-mcp-token-meta{display:flex;flex-wrap:wrap;gap:8px 18px;color:#5f6d63;font-size:12px}
+.cc-mcp-token-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:14px 0 10px}
+.cc-mcp-token-actions form{margin:0}
+.cc-mcp-toggle{margin:12px 0}
+.cc-mcp-toggle label{display:flex;align-items:flex-start;gap:9px;font-weight:500}
+.cc-mcp-toggle input{margin-top:3px}
+.cc-mcp-field{margin:18px 0 0}
+.cc-mcp-field label{display:block;margin-bottom:5px;font-weight:650}
+.cc-mcp-project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:16px 0 4px}
+.cc-mcp-project{display:flex;align-items:flex-start;gap:10px;padding:12px 14px;border:1px solid #e1e8de;border-radius:11px;background:#fbfcfa;margin:0}
+.cc-mcp-project:has(input:checked){border-color:#bcd3b6;background:#f3f9ef}
+.cc-mcp-project input{margin-top:3px}
+.cc-mcp-project span{display:flex;flex-direction:column;gap:2px;min-width:0}
+.cc-mcp-project strong{font-size:13px;color:#1d3025}
+.cc-mcp-project code{font-size:11px;color:#5c705f;background:transparent;padding:0;overflow-wrap:anywhere}
+.cc-mcp-project small{color:#7c8a80;font-size:11px}
+.cc-mcp-tool-groups{display:flex;flex-direction:column;gap:10px;margin-top:14px}
+.cc-mcp-group{border:1px solid #e4eae1;border-radius:11px;background:#fbfcfa;margin:0}
+.cc-mcp-group>summary{display:flex;align-items:center;gap:10px;padding:11px 14px;cursor:pointer;list-style:none;font-weight:700;color:#1d3025}
+.cc-mcp-group>summary::-webkit-details-marker{display:none}
+.cc-mcp-group>summary::before{content:"▸";flex:0 0 auto;color:#7c8a80;font-size:11px;transition:transform .15s ease}
+.cc-mcp-group[open]>summary{border-bottom:1px solid #e9ede7}
+.cc-mcp-group[open]>summary::before{transform:rotate(90deg)}
+.cc-mcp-group-title{flex:1 1 auto;font-size:13px}
+.cc-mcp-group-meta{flex:0 0 auto;color:#6f7f75;font-size:11.5px;font-weight:600;white-space:nowrap}
+.cc-mcp-group-body{padding:4px 14px 8px}
+.cc-mcp-wrap .cc-mcp-tool{display:flex;align-items:flex-start;gap:10px;padding:8px 0;font-weight:400;border-bottom:1px solid #f1f4ef;margin:0}
+.cc-mcp-wrap .cc-mcp-tool:last-child{border-bottom:0}
+.cc-mcp-wrap .cc-mcp-tool input{margin-top:2px}
+.cc-mcp-wrap .cc-mcp-tool:not(:has(input:checked)) .cc-mcp-tool-copy{opacity:.7}
+.cc-mcp-wrap .cc-mcp-tool-copy{display:flex;flex-direction:column;gap:2px;flex:1 1 auto;min-width:0}
+.cc-mcp-wrap .cc-mcp-tool-copy strong{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px;font-size:12.5px;color:#1d3025}
+.cc-mcp-wrap .cc-mcp-tool-copy strong code{font-size:10px;color:#6d7d71;font-weight:500;background:transparent;padding:0}
+.cc-mcp-wrap .cc-mcp-tool-copy small{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;color:#77857b;font-size:11px;line-height:1.5}
+.cc-mcp-details{border:1px solid #e4eae1;border-radius:10px;background:#fbfcfa;margin:12px 0}
+.cc-mcp-details>summary{padding:10px 14px;cursor:pointer;font-weight:650;color:#315c4a;list-style:none}
+.cc-mcp-details>summary::-webkit-details-marker{display:none}
+.cc-mcp-details[open]>summary{border-bottom:1px solid #e9ede7}
+.cc-mcp-details[open]>h3,.cc-mcp-details[open]>pre,.cc-mcp-details[open]>p{margin-left:14px;margin-right:14px}
+.cc-mcp-details[open]>table{margin:10px 0 0}
+.cc-mcp-snippet{padding:14px 16px;border:1px solid #dce4d9;border-radius:10px;background:#182722;color:#e7f1e8;font-size:12px;line-height:1.7;overflow:auto;white-space:pre}
+.cc-mcp-audit-heading{display:flex;align-items:center;justify-content:space-between;gap:15px}
+.cc-mcp-audit-table{margin-top:10px}
+.cc-mcp-audit-table td{vertical-align:top;font-size:12px}
+.cc-mcp-audit-table code{font-size:11px}
+.cc-mcp-audit-summary{display:block;overflow-wrap:anywhere}
+.cc-mcp-audit-table small{display:block;margin-top:3px;color:#8a5a2b;overflow-wrap:anywhere}
+.cc-mcp-ok{color:#315c4a;font-weight:700}
+.cc-mcp-fail{color:#9a3b2c;font-weight:700}
+.cc-mcp-settings-form>.submit{margin:6px 0 22px}
+@media(max-width:1100px){.cc-mcp-wrap .cc-mcp-status-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:782px){.cc-mcp-wrap .cc-mcp-status-grid,.cc-mcp-project-grid{grid-template-columns:1fr}.cc-mcp-tool{flex-wrap:wrap}}
